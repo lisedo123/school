@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+/* Navbar  */
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: blue;
+    padding: 0 3vw;
+    z-index: auto;
+    
+}
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+}
+.nav-part2 a{
+    text-decoration: none;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4 a{
+    font-size: 2vw;
+    color: blue;
+}
+@media (max-width:500px) {
+    .nav{
+        background-color: teal;
+        color: #fff;
+        padding: 0 5vw;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+    }
+}
+/* Home Page */
+.homepage {
+    margin-top: 90px;
+    margin-bottom: 200px;
+    display: flex;
+    z-index: auto;
+} 
+.signup {
+    display: flex;
+    width: 50%;
+    float: left;
+    padding: 40px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.signup .form-box
+.teacher {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+/* img section */
+.img{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/06/20/36/school-2596090_640.png);
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: 50%;
+    width: 100%;
+    height: 20vh;
+}
+/* Sign up/Sign in Page */
+.form-box{
+    border-radius: 50px;
+    width: 700px;
+    height: 800px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    /* margin: 6% auto; */
+    padding: 5px;
+    background: lightblue;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: auto;
+}
+.form-box::-webkit-scrollbar {
+    width: 15px;
+}
+.form-box::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+}
+.form-box::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 50px;
+}
+.button-box {
+    width: 570px;
+    margin: 60px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 40px;
+}
+.toggle-btn {
+    padding: 12px 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 20px;
+}
+#btn {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(10deg, rgba(23.59, 69.03, 157.25, 0.78) 18%, rgba(23.96, 174.25, 147.20, 0.67) 100%);
+    border-radius: 50px;
+    transition: .3s ease;
+}
+.input-group {
+    top: 180px;
+    margin-left: 50px;
+    position: absolute;
+    width: 560px;
+    transition: .5s ease;
+}
+.input-group input{
+    font-size: 22px;
+}
+.input-group .a {
+    font-size: 16px;
+    color: #000f0c;
+    text-decoration: none;
+}
+.input-group .a:hover {
+    color: #01352a;
+    text-decoration: underline;
+}
+.input-group .span {
+    padding-bottom: 2em;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+/* popup */
+.select-menu {
+    width: 550px;
+    margin: 15px auto;
+    transition: .5s ease;
+} 
+.select-menu .select-btn{
+    display: flex;
+    height: 45px;
+    background: linear-gradient(160deg, rgba(23.59, 69.03, 157.25, 0.78) 1%, rgba(23.96, 174.25, 147.20, 0.67) 100%);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 40px;
+    transition: .5s ease;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+.select-btn img{
+    height: 40px;
+    margin-left: 10px;
+}
+.select-menu .sBtn-text{
+    padding-right: 20px;
+    font-size: 20px;
+}
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1) inset;
+    display: none;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #f2f2f2;
+}
+.option .option-txt{
+    font-size: 18px;
+    color: #333;
+}
+/* popup */
+.submit-btnn {
+    width: 95%;
+    padding: 7px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(140deg, rgba(23.59, 69.03, 157.25, 0.78) 18%, rgba(23.96, 174.25, 147.20, 0.67) 100%);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.submit-btnn a {
+    text-decoration: none;
+    color: #000;
+    transition: .5s ease;
+}
+.check-box {
+    width: 40px;
+    height: 20px;
+    margin: 30px 4px 30px 0;
+}
+.check-box span {
+    color: #777;
+    font-size: 12px;
+    bottom: 0px;
+    position: absolute;
+}
+.parents {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.donor {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#teacher {
+    left: 20px;
+    transition: .4s ease;
+}
+#parents {
+    left: 950px;
+    transition: .4s ease;
+}
+#donor {
+    left: 950px;
+    transition: .4s ease;
+}
+/* image side */
+.image {
+    display: flex;
+    width: 50%;
+    float: right;
+    padding: 40px;
+    overflow: hidden;
+    /* border-left: .3px dashed white; */
+    z-index: auto;
+}
+.image img{
+    width: 880px;
+    border-radius: 40px;
+}
+.image, .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87.3vh;
+}
+@media screen and (max-width: 1080px) {
+    .signup {
+        width: 100%;
+        /* float: left; */
+    }
+    .image {
+        width: 100%;
+        /* float: right; */
+    }
+}
+
+/* About Page */
+
+.about{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    margin-bottom: 200px;
+    /* margin: 2px auto; */
+    z-index: auto;
+}
+.contaner{
+    width: 40%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    float: left;
+}
+.space{
+    width: 200px;
+}
+.image-section{
+    float: right;
+    width: 40%;
+    margin-top: 90px;
+}
+.image-section img{
+    width: 800px;
+    border-radius: 50px;
+    height: auto;
+}
+.contaner .title{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contaner .content h3{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #5d5d5d;
+    font-size: 30px;
+    font-weight: bold;
+}
+.contaner .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contaner .content p span{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contaner .content .button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contaner .content .button a{
+    background-color: #ff0202;
+    padding: 22px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.contaner .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.contaner .downloadapp{
+    margin-top: 60px;
+}
+@media screen and (max-width: 1500px){
+    .contaner{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    .contaner .title{
+        text-align: center;
+    padding: 25px 40px 10px 40px;
+    /* align-items: center; */
+    justify-content: center;
+    /* z-index: auto; */
+}
+}
+
+.contact{
+    display: flex;
+    /* background: #; */
+    width: 100%;
+    height: 90vh;
+    padding: 25px 40px 10px 40px;
+    /* align-items: center; */
+    justify-content: center;
+    /* z-index: auto; */
+}
+
+.contact .div{
+    width: 85%;
+    /* max-width: 600px; */
+}
+.contact .input-grop{
+    margin-bottom: 60px;
+    position: relative;
+    border-radius: 10px;
+}
+.contact .input-grop i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+.contact input, 
+.contact textarea{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    outline: 0;
+    border: 1px solid #006182;
+    color: #002e43;
+    background: transparent;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgb(75, 59, 1);
+}
+.contact label{
+    font-size: 23px;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 23px;
+    color: #005f82;
+    cursor: text;
+    transition: .2s;
+}
+.contact .email{
+    padding: 21px;
+}
+.contact button,
+.contact .div button{
+    box-shadow: 0px 0px 10px rgb(75, 59, 1);
+    padding: 20px 0;
+    color: #005f82;
+    border-radius: 12px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #006182;
+    width: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact input:focus~label,
+.contact input:valid~label,
+.contact textarea:focus~label,
+.contact textarea:valid~label{
+    top: -65px;
+    font-size: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-grop{
+    flex-basis: 48%;
+}
