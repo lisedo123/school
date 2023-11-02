@@ -56,17 +56,16 @@ body {
 /* Home Page */
 .homepage {
     margin-top: 90px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     display: flex;
     z-index: auto;
+    justify-content: space-between;
 } 
 .signup {
     display: flex;
-    width: 50%;
-    float: left;
+    width: 40%;
     padding: 40px;
-    flex-direction: column;
-    overflow: hidden;
+    /* flex-direction: column; */
 }
 .signup .form-box
 .teacher {
@@ -76,20 +75,11 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
 }
-/* img section */
-.img{
-    background-image: url(https://cdn.pixabay.com/photo/2017/08/06/20/36/school-2596090_640.png);
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    background-size: 50%;
-    width: 100%;
-    height: 20vh;
-}
 /* Sign up/Sign in Page */
 .form-box{
-    border-radius: 50px;
-    width: 700px;
-    height: 800px;
+    border-radius: 30px;
+    width: 440px;
+    height: 455px;
     position: relative;
     text-align: center;
     justify-content: center;
@@ -97,7 +87,6 @@ body {
     padding: 5px;
     background: lightblue;
     overflow: hidden;
-    overflow-y: scroll;
     z-index: auto;
 }
 .form-box::-webkit-scrollbar {
@@ -112,40 +101,41 @@ body {
     border-radius: 50px;
 }
 .button-box {
-    width: 570px;
-    margin: 60px auto;
+    width: 400px;
+    margin: 30px auto;
+    margin-top: 10px;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 40px;
+    display: flex;
 }
 .toggle-btn {
-    padding: 12px 50px;
+    padding: 12px 40px;
     cursor: pointer;
     background: transparent;
     border: 0;
     outline: none;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
 }
 #btn {
     top: 0px;
     left: 0px;
     position: absolute;
-    width: 220px;
+    width: 160px;
     height: 100%;
     background: linear-gradient(10deg, rgba(23.59, 69.03, 157.25, 0.78) 18%, rgba(23.96, 174.25, 147.20, 0.67) 100%);
     border-radius: 50px;
     transition: .3s ease;
 }
 .input-group {
-    top: 180px;
-    margin-left: 50px;
+    /* top: 180px; */
+    margin-left: 25px;
     position: absolute;
-    width: 560px;
+    width: 350px;
     transition: .5s ease;
 }
 .input-group input{
-    font-size: 22px;
+    font-size: 16px;
 }
 .input-group .a {
     font-size: 16px;
@@ -170,9 +160,11 @@ body {
     outline: none;
     background: transparent;
 }
+
 /* popup */
+
 .select-menu {
-    width: 550px;
+    /* width: 400px; */
     margin: 15px auto;
     transition: .5s ease;
 } 
@@ -190,19 +182,21 @@ body {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 .select-btn i{
-    font-size: 40px;
+    font-size: 30px;
     transition: .5s ease;
 }
 .select-menu.active .select-btn i{
     transform: rotate(-180deg);
 }
 .select-btn img{
-    height: 40px;
+    height: 30px;
     margin-left: 10px;
 }
 .select-menu .sBtn-text{
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
 }
 .select-menu .options{
     position: relative;
@@ -232,7 +226,7 @@ body {
     font-size: 18px;
     color: #333;
 }
-/* popup */
+/* form */
 .submit-btnn {
     width: 95%;
     padding: 7px 30px;
@@ -243,12 +237,13 @@ body {
     border: none;
     outline: none;
     border-radius: 16px;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 .submit-btnn a {
     text-decoration: none;
-    color: #000;
+    color: white;
+    font-weight: 600;
     transition: .5s ease;
 }
 .check-box {
@@ -289,20 +284,16 @@ body {
 /* image side */
 .image {
     display: flex;
-    width: 50%;
-    float: right;
+    width: 40%;
     padding: 40px;
-    overflow: hidden;
     /* border-left: .3px dashed white; */
     z-index: auto;
 }
 .image img{
-    width: 880px;
+    width: 450px;
     border-radius: 40px;
 }
 .image, .signup {
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 87.3vh;
 }
@@ -317,39 +308,45 @@ body {
     }
 }
 
+/* img section */
+.img{
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/06/20/36/school-2596090_640.png);
+    background-size: 50%;
+    width: 100%;
+    height: 20vh;
+}
+
 /* About Page */
 
 .about{
     display: flex;
     width: 100%;
     min-height: 50vh;
-    margin-bottom: 200px;
-    /* margin: 2px auto; */
+    margin-bottom: 100px;
     z-index: auto;
+    justify-content: space-around;
 }
 .contaner{
     width: 40%;
     display: block;
-    margin: auto;
     padding-top: 100px;
-    float: left;
+    padding-left: 50px;
 }
 .space{
-    width: 200px;
+    width: 100px;
 }
 .image-section{
-    float: right;
     width: 40%;
     margin-top: 90px;
 }
 .image-section img{
-    width: 800px;
+    width: 500px;
     border-radius: 50px;
     height: auto;
 }
 .contaner .title{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 15px;
 }
 .contaner .content h3{
     margin-top: 20px;
@@ -386,7 +383,10 @@ body {
     color: #fff;
 }
 .contaner .downloadapp{
-    margin-top: 60px;
+    margin-top: 20px;
+}
+.downloadapp img{
+    width: 200px;
 }
 @media screen and (max-width: 1500px){
     .contaner{
@@ -414,16 +414,13 @@ body {
     /* z-index: auto; */
 }
 }
-
+/*contact*/
 .contact{
     display: flex;
-    /* background: #; */
     width: 100%;
     height: 90vh;
     padding: 25px 40px 10px 40px;
-    /* align-items: center; */
     justify-content: center;
-    /* z-index: auto; */
 }
 
 .contact .div{
