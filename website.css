@@ -433,7 +433,7 @@ body {
     border-radius: 10px;
 }
 .contact .input-grop i{
-    font-size: 25px;
+    /* font-size: 25px; */
     padding-right: 10px;
 }
 .contact input, 
